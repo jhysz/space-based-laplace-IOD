@@ -21,11 +21,11 @@
 
 由于运动方程可以展开成时间间隔  Δt = t-t0 的幂级数解
 
-![5](http://latex.codecogs.com/svg.latex?\\vec{r(t)}=\vec{r0}+\vec{r0^{'}}\Delta+\frac{1}{2}\vec{r0^{''}}\Delta^{2}+\cdots)
+![6](http://latex.codecogs.com/svg.latex?\\vec{r(t)}=\vec{r0}+\vec{r0^{'}}\Delta+\frac{1}{2}\vec{r0^{''}}\Delta^{2}+\cdots)
 
 所以，`t`时刻的位置矢量可以写成如下形式（本文算法中该方程仅基于二体方程，未考虑J2等其他摄动）：
 
-![5](http://latex.codecogs.com/svg.latex?\\vec{rt}=f(\vec{r0},\vec{r0^{'}},\Delta)*\vec{r0}+g(\vec{r0},\vec{r0^{'}},\Delta)*\dot\vec{r0})
+![7](http://latex.codecogs.com/svg.latex?\\vec{rt}=f(\vec{r0},\vec{r0^{'}},\Delta)*\vec{r0}+g(\vec{r0},\vec{r0^{'}},\Delta)*\dot\vec{r0})
 
 注：f和g的幂级数展开式可以通过力模型得到，该幂级数展开式中的部分项是由待求的r0，v0决定，所以在迭代过程中，f和g也不断变化
 
@@ -33,9 +33,7 @@
 
 ![6](http://latex.codecogs.com/svg.latex?\\vec{L}\times\vec{R}=f(\vec{L}\times\vec{r0})+g(\vec{L}\times\dot\vec{r0}))
 
-将其化为标量方程后可以看出方程个数与未知数个数并不一致，共有三个方程和如下六个未知数，但三个方程只有两个是互相独立的，所以至少需要三次观测资料才能定轨
-
-$$r0x,r0y,r0z,\dot r0x,\dot r0y,\dot r0z$$
+将其化为标量方程后可以看出方程个数与未知数个数并不一致，共有三个方程和六个未知数(r0,v0)，但三个方程只有两个是互相独立的，所以至少需要三次观测资料才能定轨
 
 对于待求方程，只能采用迭代的方式求解，而且也可以通过迭代的方式求解 f，g
 
