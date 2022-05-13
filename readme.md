@@ -1,5 +1,5 @@
 # The initial orbit determination(IOD) using short arc observation data from space-based telescopes
-==================================================================================================
+=============================================================
 
 ## *1. Laplace IOD*
 
