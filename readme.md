@@ -15,8 +15,11 @@
 设`ti`时刻时，空间目标的测量矢量在地心坐标系下的赤经和赤纬分别为`ai`，`bi`。`L`为观测的单位矢量，`Lx`,`Ly`,`Lz`为为该单位矢量的三分量。
 
 ![2](http://latex.codecogs.com/svg.latex?\\vec{\rho}=\rho\vec{L})
+
 ![3](http://latex.codecogs.com/svg.latex?Lx=cos(b)*cos(a))
+
 ![4](http://latex.codecogs.com/svg.latex?Ly=cos(b)*sin(a))
+
 ![5](http://latex.codecogs.com/svg.latex?Lz=sin(b))
 
 由于运动方程可以展开成时间间隔  Δt = t-t0 的幂级数解
